@@ -1,0 +1,21 @@
+[
+{
+  "modid": "GCraft",
+  "name": "G-Craft",
+  "description": "Started by following Pahimar's Let's Mod Reboot series. Let's see where this goes.",
+  "version": "Pre-Alpha_1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "R3ap3rG"
+  ],
+  "credits": "Pahimar - For awesome tutorial series!",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]

@@ -1,0 +1,27 @@
+
+
+
+
+item.gcraft:crystal.name=Crystal
+item.gcraft:ingotCopper.name=Copper Ingot
+item.gcraft:ingotTin.name=Tin Ingot
+
+
+
+tile.gcraft:crystalBlock.name=Crystal Block
+tile.gcraft:copperBlock.name=Copper Block
+tile.gcraft:tinBlock.name=Tin Block
+
+tile.gcraft:crystalOre.name=Crystal Deposit
+tile.gcraft:copperOre.name=Copper Ore
+tile.gcraft:tinOre.name=Tin Ore
+
+tile.gcraft:tinNetherOre.name=Nether Tin Ore
+tile.gcraft:copperNetherOre.name=Nether Copper Ore
+tile.gcraft:coalNetherOre.name=Nether Coal Ore
+tile.gcraft:ironNetherOre.name=Nether Iron Ore
+tile.gcraft:goldNetherOre.name=Nether Gold Ore
+tile.gcraft:diamondNetherOre.name=Nether Diamond Ore
+tile.gcraft:crystalNetherOre.name=Nether Crystal Ore
+tile.gcraft:emeraldNetherOre.name=Nether Emerald Ore
+tile.gcraft:lapisNetherOre.name= Nether Lapis Ore
