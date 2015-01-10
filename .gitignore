@@ -22,3 +22,5 @@ G-Craft.iws
 G-Craft.ipr
 G-Craft.iml
 eclipse/options.txt
+*.gz
+out/
