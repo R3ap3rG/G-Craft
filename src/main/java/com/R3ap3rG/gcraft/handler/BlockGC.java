@@ -1,6 +1,8 @@
 package com.R3ap3rG.gcraft.handler;
 
 
+import com.R3ap3rG.gcraft.init.ModBlocks;
+import com.R3ap3rG.gcraft.init.ModItems;
 import com.R3ap3rG.gcraft.utility.CreativeTabGC;
 import com.R3ap3rG.gcraft.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
@@ -8,16 +10,28 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.item.Item;
+
+import java.util.Random;
 
 public class BlockGC extends Block
 {
     public BlockGC(Material material){
         super(material);
+        this.setHardness(4F);
         this.setCreativeTab(CreativeTabGC.GCRAFT_TAB);
     }
 
     public BlockGC(){
         this(Material.rock);
+    }
+
+    public Item getItemDropped(int i, Random random, int x) {
+        return this == ModBlocks.crystalOre ? ModItems.crystal : (this == ModBlocks.osmiumNetherOre ? ModItems.dustOsmium : Item.getItemFromBlock(this));
+    }
+
+    public int quantityDropped(Random random){
+        return this == ModBlocks.crystalOre ? random.nextInt(4) : (this == ModBlocks.osmiumNetherOre ? random.nextInt(5): 1);
     }
 
     @Override

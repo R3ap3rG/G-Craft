@@ -6,6 +6,9 @@ item.gcraft:crystal.name=Crystal
 item.gcraft:ingotCopper.name=Copper Ingot
 item.gcraft:ingotTin.name=Tin Ingot
 
+item.gcraft:dustOsmium.name=Osmium Dust
+item.gcraft:shardOsmium.name=Osmium Shards
+
 
 
 tile.gcraft:blockCrystal.name=Crystal Block
@@ -26,3 +29,4 @@ tile.gcraft:oreNetherCrystal.name=Nether Crystal Deposit
 tile.gcraft:oreNetherEmerald.name=Nether Emerald Ore
 tile.gcraft:oreNetherLapis.name=Nether Lapis Ore
 tile.gcraft:oreNetherRedstone.name=Nether Redstone Ore
+tile.gcraft:oreNetherOsmium.name=Nether Osmium Ore

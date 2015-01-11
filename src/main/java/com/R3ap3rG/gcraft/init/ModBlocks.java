@@ -26,6 +26,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
         public static final BlockGC emeraldNetherOre = new OreNetherEmerald();
         public static final BlockGC lapisNetherOre = new OreNetherLapis();
         public static final BlockGC redstoneNetherOre = new OreNetherRedstone();
+        public static final BlockGC osmiumNetherOre = new OreNetherOsmium();
 
         public static void init()
         {
@@ -45,6 +46,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
             GameRegistry.registerBlock(emeraldNetherOre, "emeraldNetherOre");
             GameRegistry.registerBlock(lapisNetherOre, "lapisNetherOre");
             GameRegistry.registerBlock(redstoneNetherOre, "redstoneNetherOre");
+            GameRegistry.registerBlock(osmiumNetherOre, "osmiumNetherOre");
         }
     }
 
