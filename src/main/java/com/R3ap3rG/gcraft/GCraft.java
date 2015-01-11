@@ -7,7 +7,7 @@ import com.R3ap3rG.gcraft.init.Recipes;
 import com.R3ap3rG.gcraft.proxy.IProxy;
 import com.R3ap3rG.gcraft.reference.Reference;
 import com.R3ap3rG.gcraft.handler.ConfigHandler;
-import com.R3ap3rG.gcraft.utility.WorldGenGC;
+import com.R3ap3rG.gcraft.utility.world.WorldGenGC;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;

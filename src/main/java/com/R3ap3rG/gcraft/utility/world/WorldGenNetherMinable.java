@@ -1,4 +1,4 @@
-package com.R3ap3rG.gcraft.utility;
+package com.R3ap3rG.gcraft.utility.world;
 
 import java.util.Random;
 import net.minecraft.block.Block;
