@@ -1,5 +1,6 @@
 package com.R3ap3rG.gcraft;
 
+import com.R3ap3rG.gcraft.handler.FuelHandler;
 import com.R3ap3rG.gcraft.init.ModBlocks;
 import com.R3ap3rG.gcraft.init.ModItems;
 import com.R3ap3rG.gcraft.init.Recipes;
@@ -48,6 +49,7 @@ public class GCraft {
     public void postInit(FMLPostInitializationEvent event){
 
         GameRegistry.registerWorldGenerator(eventWorldGen,0);
+        GameRegistry.registerFuelHandler(new FuelHandler());
 
     }
 }

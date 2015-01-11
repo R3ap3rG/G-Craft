@@ -24,3 +24,4 @@ G-Craft.iml
 eclipse/options.txt
 *.gz
 out/
+eclipse/config/GCraft.cfg
