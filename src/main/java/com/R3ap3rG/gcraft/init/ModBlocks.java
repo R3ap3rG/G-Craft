@@ -16,6 +16,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
         public static final BlockGC crystalOre = new OreCrystal();
         public static final BlockGC copperOre = new OreCopper();
         public static final BlockGC tinOre = new OreTin();
+
         public static final BlockGC tinNetherOre = new OreNetherTin();
         public static final BlockGC copperNetherOre = new OreNetherCopper();
         public static final BlockGC ironNetherOre = new OreNetherIron();
@@ -28,14 +29,18 @@ import cpw.mods.fml.common.registry.GameRegistry;
         public static final BlockGC redstoneNetherOre = new OreNetherRedstone();
         public static final BlockGC osmiumNetherOre = new OreNetherOsmium();
 
+        public static final BlockGC enderEndOre = new OreEndEnder();
+
         public static void init()
         {
             GameRegistry.registerBlock(crystalBlock,"crystalBlock");
             GameRegistry.registerBlock(copperBlock,"copperBlock");
             GameRegistry.registerBlock(tinBlock,"tinBlock");
+
             GameRegistry.registerBlock(crystalOre,"crystalOre");
             GameRegistry.registerBlock(copperOre,"copperOre");
             GameRegistry.registerBlock(tinOre,"tinOre");
+
             GameRegistry.registerBlock(tinNetherOre,"tinNetherOre");
             GameRegistry.registerBlock(copperNetherOre,"copperNetherOre");
             GameRegistry.registerBlock(coalNetherOre,"coalNetherOre");
@@ -47,6 +52,8 @@ import cpw.mods.fml.common.registry.GameRegistry;
             GameRegistry.registerBlock(lapisNetherOre, "lapisNetherOre");
             GameRegistry.registerBlock(redstoneNetherOre, "redstoneNetherOre");
             GameRegistry.registerBlock(osmiumNetherOre, "osmiumNetherOre");
+
+            GameRegistry.registerBlock(enderEndOre, "enderEndOre");
         }
     }
 

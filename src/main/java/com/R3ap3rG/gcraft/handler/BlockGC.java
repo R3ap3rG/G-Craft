@@ -10,6 +10,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 import java.util.Random;
@@ -27,11 +28,11 @@ public class BlockGC extends Block
     }
 
     public Item getItemDropped(int i, Random random, int x) {
-        return this == ModBlocks.crystalOre ? ModItems.crystal : (this == ModBlocks.osmiumNetherOre ? ModItems.dustOsmium : Item.getItemFromBlock(this));
+        return this == ModBlocks.crystalOre ? ModItems.crystal : (this == ModBlocks.osmiumNetherOre ? ModItems.dustOsmium : (this == ModBlocks.enderEndOre ? ModItems.shardEnder : Item.getItemFromBlock(this)));
     }
 
     public int quantityDropped(Random random){
-        return this == ModBlocks.crystalOre ? random.nextInt(4) : (this == ModBlocks.osmiumNetherOre ? random.nextInt(5): 1);
+        return this == ModBlocks.crystalOre ? random.nextInt(4) : (this == ModBlocks.osmiumNetherOre ? random.nextInt(5): (this == ModBlocks.enderEndOre ? 1 + random.nextInt(3) : 1));
     }
 
     @Override

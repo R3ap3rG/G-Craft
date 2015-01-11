@@ -13,6 +13,7 @@ public class ModItems{
     public static final ItemGC ingotTin = new ItemIngotTin();
     public static final ItemGC dustOsmium = new ItemDustOsmium();
     public static final ItemGC shardOsmium = new ItemShardOsmium();
+    public static final ItemGC shardEnder = new ItemShardEnder();
 
     public static void init()
     {
@@ -21,5 +22,6 @@ public class ModItems{
         GameRegistry.registerItem(ingotTin, "ingotTin");
         GameRegistry.registerItem(dustOsmium, "dustOsmium");
         GameRegistry.registerItem(shardOsmium, "shardOsmium");
+        GameRegistry.registerItem(shardEnder, "shardEnder");
     }
 }
