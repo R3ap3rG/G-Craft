@@ -6,15 +6,19 @@ import com.R3ap3rG.gcraft.init.Recipes;
 import com.R3ap3rG.gcraft.proxy.IProxy;
 import com.R3ap3rG.gcraft.reference.Reference;
 import com.R3ap3rG.gcraft.handler.ConfigHandler;
+import com.R3ap3rG.gcraft.utility.WorldGenGC;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class GCraft {
+
+    WorldGenGC eventWorldGen = new WorldGenGC();
 
     @Mod.Instance("GCraft")
     public static GCraft instance;
@@ -42,6 +46,8 @@ public class GCraft {
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event){
+
+        GameRegistry.registerWorldGenerator(eventWorldGen,0);
 
     }
 }

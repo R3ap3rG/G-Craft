@@ -1,6 +1,7 @@
 package com.R3ap3rG.gcraft.init;
 
 import com.R3ap3rG.gcraft.block.*;
+import com.R3ap3rG.gcraft.handler.BlockGC;
 import com.R3ap3rG.gcraft.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -24,6 +25,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
         public static final BlockGC crystalNetherOre = new OreNetherCrystal();
         public static final BlockGC emeraldNetherOre = new OreNetherEmerald();
         public static final BlockGC lapisNetherOre = new OreNetherLapis();
+        public static final BlockGC redstoneNetherOre = new OreNetherRedstone();
 
         public static void init()
         {
@@ -42,6 +44,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
             GameRegistry.registerBlock(crystalNetherOre,"crystalNetherOre");
             GameRegistry.registerBlock(emeraldNetherOre, "emeraldNetherOre");
             GameRegistry.registerBlock(lapisNetherOre, "lapisNetherOre");
+            GameRegistry.registerBlock(redstoneNetherOre, "redstoneNetherOre");
         }
     }
 

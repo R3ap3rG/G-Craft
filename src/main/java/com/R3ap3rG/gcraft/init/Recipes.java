@@ -30,5 +30,6 @@ public class Recipes {
         GameRegistry.addSmelting(ModBlocks.diamondNetherOre, new ItemStack(Blocks.diamond_ore),5);
         GameRegistry.addSmelting(ModBlocks.emeraldNetherOre, new ItemStack(Blocks.emerald_ore),5);
         GameRegistry.addSmelting(ModBlocks.lapisNetherOre, new ItemStack(Blocks.lapis_ore),5);
+        GameRegistry.addSmelting(ModBlocks.redstoneNetherOre, new ItemStack(Blocks.redstone_ore),5);
     }
 }

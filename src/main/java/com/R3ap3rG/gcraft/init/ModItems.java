@@ -1,7 +1,7 @@
 package com.R3ap3rG.gcraft.init;
 
 import com.R3ap3rG.gcraft.item.ItemCrystal;
-import com.R3ap3rG.gcraft.item.ItemGC;
+import com.R3ap3rG.gcraft.handler.ItemGC;
 import com.R3ap3rG.gcraft.item.ItemIngotCopper;
 import com.R3ap3rG.gcraft.item.ItemIngotTin;
 import com.R3ap3rG.gcraft.reference.Reference;

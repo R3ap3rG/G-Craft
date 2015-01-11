@@ -24,4 +24,5 @@ tile.gcraft:oreNetherGold.name=Nether Gold Ore
 tile.gcraft:oreNetherDiamond.name=Nether Diamond Ore
 tile.gcraft:oreNetherCrystal.name=Nether Crystal Deposit
 tile.gcraft:oreNetherEmerald.name=Nether Emerald Ore
-tile.gcraft:oreNetherLapis.name= Nether Lapis Ore
+tile.gcraft:oreNetherLapis.name=Nether Lapis Ore
+tile.gcraft:oreNetherRedstone.name=Nether Redstone Ore
