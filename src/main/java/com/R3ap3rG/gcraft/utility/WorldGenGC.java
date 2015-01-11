@@ -14,9 +14,9 @@ public class WorldGenGC implements IWorldGenerator{
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
         switch (world.provider.dimensionId){
             case 0:
-                generateSurface(world, random, chunkX*16,chunkZ*16);
+                generateSurface(world, random, chunkX*16, chunkZ*16);
             case -1:
-                generateNether(world,random,chunkX*16,chunkZ*16);
+                generateNether(world, random, chunkX*16, chunkZ*16);
         }
     }
 
@@ -29,17 +29,18 @@ public class WorldGenGC implements IWorldGenerator{
     }
 
     private void generateNether(World world, Random random, int x, int z) {
-        this.addOreSpawn(ModBlocks.coalNetherOre, world ,random, x, z, 16, 16, 6+random.nextInt(10),37,27,100);
-        this.addOreSpawn(ModBlocks.copperNetherOre, world ,random, x, z, 16, 16, 6+random.nextInt(10),37,27,100);
-        this.addOreSpawn(ModBlocks.tinNetherOre, world ,random, x, z, 16, 16, 6+random.nextInt(10),37,27,100);
-        this.addOreSpawn(ModBlocks.ironNetherOre, world ,random, x, z, 16, 16, 4+random.nextInt(8),37,27,100);
-        this.addOreSpawn(ModBlocks.goldNetherOre, world ,random, x, z, 16, 16, 2+random.nextInt(5),19,27,100);
-        this.addOreSpawn(ModBlocks.diamondNetherOre, world ,random, x, z, 16, 16, 1+random.nextInt(4),10,1,27);
-        this.addOreSpawn(ModBlocks.lapisNetherOre, world ,random, x, z, 16, 16, 2+random.nextInt(6),29,15,100);
-        this.addOreSpawn(ModBlocks.redstoneNetherOre, world ,random, x, z, 16, 16, 2+random.nextInt(7),29,15,100);
-        this.addOreSpawn(ModBlocks.crystalNetherOre, world ,random, x, z, 16, 16, 2+random.nextInt(5),25,7,100);
-        this.addOreSpawn(ModBlocks.emeraldNetherOre, world ,random, x, z, 16, 16, 1+random.nextInt(4),15,1,35);
+        this.addNetherOreSpawn(ModBlocks.coalNetherOre, world, random, x, z, 16, 16, 6 + random.nextInt(10), 37, 27, 100);
+        this.addNetherOreSpawn(ModBlocks.copperNetherOre, world, random, x, z, 16, 16, 6 + random.nextInt(10), 37, 27, 100);
+        this.addNetherOreSpawn(ModBlocks.tinNetherOre, world, random, x, z, 16, 16, 6 + random.nextInt(10), 37, 27, 100);
+        this.addNetherOreSpawn(ModBlocks.ironNetherOre, world, random, x, z, 16, 16, 4 + random.nextInt(8), 37, 27, 100);
+        this.addNetherOreSpawn(ModBlocks.goldNetherOre, world, random, x, z, 16, 16, 2 + random.nextInt(5), 19, 27, 100);
+        this.addNetherOreSpawn(ModBlocks.diamondNetherOre, world, random, x, z, 16, 16, 1 + random.nextInt(4), 10, 1, 27);
+        this.addNetherOreSpawn(ModBlocks.lapisNetherOre, world, random, x, z, 16, 16, 2 + random.nextInt(6), 29, 15, 100);
+        this.addNetherOreSpawn(ModBlocks.redstoneNetherOre, world, random, x, z, 16, 16, 2 + random.nextInt(7), 29, 15, 100);
+        this.addNetherOreSpawn(ModBlocks.crystalNetherOre, world, random, x, z, 16, 16, 2 + random.nextInt(5), 25, 7, 100);
+        this.addNetherOreSpawn(ModBlocks.emeraldNetherOre, world, random, x, z, 16, 16, 1 + random.nextInt(4), 15, 1, 35);
     }
+
 
     private void addOreSpawn(BlockGC block, World world, Random random, int xPos, int zPos, int x, int z, int vein, int chance, int y, int Y) {
         for(int i = 0; i < chance; ++i){
@@ -49,4 +50,14 @@ public class WorldGenGC implements IWorldGenerator{
             (new WorldGenMinable(block, vein)).generate(world, random, posX,posY,posZ);
         }
     }
+
+    private void addNetherOreSpawn(BlockGC block, World world, Random random, int xPos, int zPos, int x, int z, int vein, int chance, int y, int Y) {
+        for(int i = 0; i < chance; ++i){
+            int posX = xPos + random.nextInt(x);
+            int posY = y + random.nextInt(Y - y);
+            int posZ = zPos + random.nextInt(z);
+            (new WorldGenNetherMinable(block, vein)).generate(world, random, posX,posY,posZ);
+        }
+    }
+
 }
