@@ -1,4 +1,4 @@
-package com.R3ap3rG.gcraft.block;
+package com.R3ap3rG.gcraft.handler;
 
 
 import com.R3ap3rG.gcraft.utility.CreativeTabGC;
