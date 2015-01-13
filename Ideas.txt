@@ -1,0 +1,91 @@
+Entities
+	Mob
+		Slasher (Dead Space inspired)
+			Model
+			Texture
+			AI
+		Reaper/Shade
+			Model
+			Texture
+			AI
+Animal/Passive
+		Goat
+			Model
+			Texture
+			AI
+				Milk-able
+				Shear-able
+		Ghosts
+			Model
+			Texture
+			AI
+Tools
+	Wrench
+		Mod compatibility
+	Weapons
+		Ranged
+			Arm Cannon
+				Model
+				Ammo? / Energy?
+				Sounds
+				Recipe
+			Blaster
+				Ammo
+				Model
+				Sounds
+				Recipe
+		Melee
+			Energy Saber (Think lightsaber)
+				Model
+				Recipe
+		Magic
+			Mahouka koukou no rettousei inspired
+				Plethora of effects
+					Combinable?
+					Custom programmable?
+				Casting items (CAD's)
+					Various models
+						Animations?
+					Custom programmable?
+Blocks
+	
+
+Machines
+	Power system
+		Wiring
+		Generation
+		Storage
+	Crusher/Grinder
+		Making {dusts/chunks/something}
+	New Furnace/Smelter
+		Multiple inputs
+		Multiple outputs
+	Construction table
+		Specialized + Generic
+		Models
+			Animations?
+		Textures
+		Upgradeable?
+	Storage
+		Chest
+			> 64 per stack
+		Tank
+			Fluids
+		
+WorldGen
+	More ores
+		Even more ores
+	Nether ores  --  done
+	End ores
+	Structures
+		Decorative
+			Graveyard
+				Gravestone tileEntities/Blocks
+					Personal stories ?
+					Ghost spawn
+		Dungeons
+			Increasing difficulty
+			Various loot
+			Specific mechanics/ puzzles?
+				Bosses
+			
