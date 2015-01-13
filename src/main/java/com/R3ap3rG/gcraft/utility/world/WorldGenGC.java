@@ -2,9 +2,8 @@ package com.R3ap3rG.gcraft.utility.world;
 
 import com.R3ap3rG.gcraft.handler.BlockGC;
 import com.R3ap3rG.gcraft.init.ModBlocks;
-import com.R3ap3rG.gcraft.utility.world.WorldGenEndMinable;
-import com.R3ap3rG.gcraft.utility.world.WorldGenNetherMinable;
 import cpw.mods.fml.common.IWorldGenerator;
+import net.minecraft.init.Blocks;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -66,7 +65,7 @@ public class WorldGenGC implements IWorldGenerator{
             int posX = xPos + random.nextInt(x);
             int posY = y + random.nextInt(Y - y);
             int posZ = zPos + random.nextInt(z);
-            (new WorldGenNetherMinable(block, vein)).generate(world, random, posX,posY,posZ);
+            (new WorldGenMinable(block, vein, Blocks.netherrack)).generate(world, random, posX, posY, posZ);
         }
     }
 
@@ -75,7 +74,7 @@ public class WorldGenGC implements IWorldGenerator{
             int posX = xPos + random.nextInt(x);
             int posY = y + random.nextInt(Y - y);
             int posZ = zPos + random.nextInt(z);
-            (new WorldGenEndMinable(block, vein)).generate(world, random, posX,posY,posZ);
+            (new WorldGenMinable(block, vein, Blocks.end_stone)).generate(world, random, posX,posY,posZ);
         }
     }
 
