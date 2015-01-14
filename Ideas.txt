@@ -57,6 +57,7 @@ Tools
 		Melee
 			Energy Saber (Think lightsaber)
 				Model
+				Activatable
 				Recipe
 		Magic
 			Mahouka koukou no rettousei inspired
