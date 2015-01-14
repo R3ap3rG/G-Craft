@@ -4,9 +4,10 @@ import com.R3ap3rG.gcraft.block.*;
 import com.R3ap3rG.gcraft.handler.BlockGC;
 import com.R3ap3rG.gcraft.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
 
 
-    @GameRegistry.ObjectHolder(Reference.MOD_ID)
+@GameRegistry.ObjectHolder(Reference.MOD_ID)
     public class ModBlocks
     {
         public static final BlockGC crystalBlock = new BlockCrystal();
@@ -54,6 +55,24 @@ import cpw.mods.fml.common.registry.GameRegistry;
             GameRegistry.registerBlock(osmiumNetherOre, "osmiumNetherOre");
 
             GameRegistry.registerBlock(enderEndOre, "enderEndOre");
+
+
+            OreDictionary.registerOre("blockCopper", copperBlock);
+            OreDictionary.registerOre("blockTin", tinBlock);
+
+            OreDictionary.registerOre("oreCopper", copperOre);
+            OreDictionary.registerOre("oreTin", tinOre);
+
+            OreDictionary.registerOre("oreNetherTin", tinNetherOre);
+            OreDictionary.registerOre("oreNetherCopper", copperNetherOre);
+            OreDictionary.registerOre("oreNetherCoal", coalNetherOre);
+            OreDictionary.registerOre("oreNetherIron", ironNetherOre);
+            OreDictionary.registerOre("oreNetherGold", goldNetherOre);
+            OreDictionary.registerOre("oreNetherDiamond", diamondNetherOre);
+            OreDictionary.registerOre("oreNetherEmerald", emeraldNetherOre);
+            OreDictionary.registerOre("oreNetherLapis", lapisNetherOre);
+            OreDictionary.registerOre("oreNetherRedstone", redstoneNetherOre);
+            OreDictionary.registerOre("oreNetherOsmium", osmiumNetherOre);
         }
     }
 

@@ -4,6 +4,7 @@ import com.R3ap3rG.gcraft.item.*;
 import com.R3ap3rG.gcraft.handler.ItemGC;
 import com.R3ap3rG.gcraft.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
 
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModItems{
@@ -23,5 +24,9 @@ public class ModItems{
         GameRegistry.registerItem(dustOsmium, "dustOsmium");
         GameRegistry.registerItem(shardOsmium, "shardOsmium");
         GameRegistry.registerItem(shardEnder, "shardEnder");
+
+
+        OreDictionary.registerOre("ingotCopper", ingotCopper);
+        OreDictionary.registerOre("ingotTin", ingotTin);
     }
 }

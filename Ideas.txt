@@ -8,7 +8,7 @@ Entities
 			Model
 			Texture
 			AI
-Animal/Passive
+	Animal/Passive
 		Goat
 			Model
 			Texture
@@ -19,6 +19,26 @@ Animal/Passive
 			Model
 			Texture
 			AI
+		Drone (Destiny inspired - GHOST "Little Light")
+			Flying
+			Model
+            Texture
+            AI
+				Follows player
+					Attack hostile?
+					Portable crafting?
+					Portable smelting?
+					Dynamic lightsource?
+						(Is dynamic possible without certain mod?)
+							Otherwise needs dependency
+						Torch always BEHIND player?
+							Or doesnt render but registers light?
+					Inventory?
+			Sounds
+				Speech?
+				Noise?
+			Recipe
+
 Tools
 	Wrench
 		Mod compatibility
@@ -48,6 +68,9 @@ Tools
 						Animations?
 					Custom programmable?
 Blocks
+	Fluid
+		Liquid ender
+			Random teleport on touch?
 	
 
 Machines
