@@ -3,6 +3,7 @@ package com.R3ap3rG.gcraft;
 import com.R3ap3rG.gcraft.handler.FuelHandler;
 import com.R3ap3rG.gcraft.init.ModBlocks;
 import com.R3ap3rG.gcraft.init.ModItems;
+import com.R3ap3rG.gcraft.init.ModMachine;
 import com.R3ap3rG.gcraft.init.Recipes;
 import com.R3ap3rG.gcraft.proxy.IProxy;
 import com.R3ap3rG.gcraft.reference.Reference;
@@ -37,6 +38,8 @@ public class GCraft {
 
         ModBlocks.init();
         ModItems.init();
+        ModMachine.init();
+
     }
 
     @Mod.EventHandler

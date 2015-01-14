@@ -34,3 +34,5 @@ tile.gcraft:oreNetherRedstone.name=Nether Redstone Ore
 tile.gcraft:oreNetherOsmium.name=Nether Osmium Ore
 
 tile.gcraft:oreEndEnder.name=Ender Deposit
+
+tile.gcraft:compressor.name=Compressor
