@@ -9,8 +9,8 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 public class Recipes {
     public static void init(){
         GameRegistry.addRecipe(new ItemStack(ModBlocks.crystalBlock), "sss","sss","sss",'s',new ItemStack(ModItems.crystal));
-        GameRegistry.addRecipe(new ShapedOreRecipe(ModBlocks.copperBlock, true, new Object[]{"sss","sss","sss", Character.valueOf('s'), ModItems.ingotCopper}));
-        GameRegistry.addRecipe(new ShapedOreRecipe(ModBlocks.tinBlock, true, new Object[]{"sss","sss","sss", Character.valueOf('s'), ModItems.ingotTin}));
+        GameRegistry.addRecipe(new ShapedOreRecipe(ModBlocks.copperBlock, true, new Object[]{"sss","sss","sss",'s', ModItems.ingotCopper}));
+        GameRegistry.addRecipe(new ShapedOreRecipe(ModBlocks.tinBlock, true, new Object[]{"sss","sss","sss", 's', ModItems.ingotTin}));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.crystal, 9), new ItemStack(ModBlocks.crystalBlock));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ingotCopper, 9) ,new ItemStack(ModBlocks.copperBlock));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ingotTin, 9) ,new ItemStack(ModBlocks.tinBlock));
