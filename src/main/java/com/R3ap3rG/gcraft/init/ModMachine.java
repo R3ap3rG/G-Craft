@@ -8,9 +8,11 @@ import cpw.mods.fml.common.registry.GameRegistry;
 @GameRegistry.ObjectHolder(Reference.MOD_ID)
     public class ModMachine
     {
-        public static final MachineGC compressor = new MachineCompressor();
+        public static final MachineGC compressorOn = new MachineCompressor(true);
+        public static final MachineGC compressorOff = new MachineCompressor(false);
 
         public static void init() {
-            GameRegistry.registerBlock(compressor, "compressor");
+            GameRegistry.registerBlock(compressorOn, "compressor");
+            //G
         }
     }
