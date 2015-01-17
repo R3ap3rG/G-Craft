@@ -13,6 +13,5 @@ import cpw.mods.fml.common.registry.GameRegistry;
 
         public static void init() {
             GameRegistry.registerBlock(compressorOn, "compressor");
-            //G
         }
     }

@@ -1,7 +1,7 @@
 package com.R3ap3rG.gcraft.handler;
 
-import com.R3ap3rG.gcraft.utility.CreativeTabGC;
 import com.R3ap3rG.gcraft.reference.Reference;
+import com.R3ap3rG.gcraft.utility.CreativeTabGC;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;

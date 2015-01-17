@@ -1,7 +1,7 @@
 package com.R3ap3rG.gcraft.init;
 
-import com.R3ap3rG.gcraft.item.*;
 import com.R3ap3rG.gcraft.handler.ItemGC;
+import com.R3ap3rG.gcraft.item.*;
 import com.R3ap3rG.gcraft.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraftforge.oredict.OreDictionary;
