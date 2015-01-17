@@ -5,6 +5,7 @@ import com.R3ap3rG.gcraft.tileentity.TileEntityCompressor;
 import net.minecraft.client.gui.inventory.GuiContainer;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.InventoryPlayer;
+import net.minecraft.inventory.Container;
 import net.minecraft.util.ResourceLocation;
 
 public class CompressorGui extends GuiContainer{
@@ -21,6 +22,8 @@ public class CompressorGui extends GuiContainer{
         this.xSize = 176;
         this.ySize = 166;
     }
+
+
 
     public void drawGuiContainerForegroundLayer(int r1, int r2){
         String name = this.compressor.hasCustomInventoryName()? this.compressor.getInventoryName() : I18n.format(this.compressor.getInventoryName(),new Object[0]);

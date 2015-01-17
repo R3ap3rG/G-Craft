@@ -13,6 +13,10 @@ public class ContainerCompressor extends Container{
         this.compressor = entity;
     }
 
+    private static Container ContainerCompressor(InventoryPlayer inventoryPlayer, TileEntityCompressor entity) {
+        return null;
+    }
+
     @Override
     public boolean canInteractWith(EntityPlayer p_75145_1_) {
         return false;
