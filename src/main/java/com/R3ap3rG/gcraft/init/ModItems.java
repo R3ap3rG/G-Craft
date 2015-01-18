@@ -16,6 +16,10 @@ public class ModItems{
     public static final ItemGC shardOsmium = new ItemShardOsmium();
     public static final ItemGC shardEnder = new ItemShardEnder();
 
+    public static final ItemGC plateIron = new ItemIronPlate();
+    public static final ItemGC plateCopper = new ItemCopperPlate();
+    public static final ItemGC plateTin = new ItemTinPlate();
+
     public static void init()
     {
         GameRegistry.registerItem(crystal, "crystal");
@@ -24,9 +28,16 @@ public class ModItems{
         GameRegistry.registerItem(dustOsmium, "dustOsmium");
         GameRegistry.registerItem(shardOsmium, "shardOsmium");
         GameRegistry.registerItem(shardEnder, "shardEnder");
-
+        GameRegistry.registerItem(plateIron, "itemPlateIron");
+        GameRegistry.registerItem(plateCopper, "itemPlateCopper");
+        GameRegistry.registerItem(plateTin, "itemPlateTin");
 
         OreDictionary.registerOre("ingotCopper", ingotCopper);
         OreDictionary.registerOre("ingotTin", ingotTin);
+        OreDictionary.registerOre("itemPlateIron", plateIron);
+        OreDictionary.registerOre("itemPlateCopper", plateCopper);
+        OreDictionary.registerOre("itemPlateTin", plateTin);
+
+
     }
 }

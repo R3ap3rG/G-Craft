@@ -33,7 +33,7 @@ public class MachineCompressor extends MachineGC {
 
     @SideOnly(Side.CLIENT)
     public IIcon getIcon(int side, int other) {
-        return side == 1 ? this.iconTop : (side == 0 ? this.iconTop : (side != other ? this.blockIcon : this.iconFront));
+        return side == 1 ? this.iconTop : (side == 0 ? this.iconTop : (side == other ? this.iconFront : this.blockIcon));
     }
 
 

@@ -2,6 +2,7 @@ package com.R3ap3rG.gcraft.init;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
@@ -14,8 +15,9 @@ public class Recipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ingotCopper, 9) ,new ItemStack(ModBlocks.copperBlock));
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ingotTin, 9) ,new ItemStack(ModBlocks.tinBlock));
 
-        //temp recipe
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.crystal,1),new ItemStack(ModBlocks.crystalOre));
+        GameRegistry.addRecipe(new ItemStack(ModItems.plateIron, 2)," s ", "sss", " s ", 's', Items.iron_ingot);
+        GameRegistry.addRecipe(new ItemStack(ModItems.plateCopper, 2)," s ", "sss", " s ", 's', ModItems.ingotCopper);
+        GameRegistry.addRecipe(new ItemStack(ModItems.plateTin, 2)," s ", "sss", " s ", 's', ModItems.ingotTin);
 
 
         GameRegistry.addSmelting(ModBlocks.copperOre, new ItemStack(ModItems.ingotCopper), 5);

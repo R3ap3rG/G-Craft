@@ -11,6 +11,10 @@ item.gcraft:shardOsmium.name=Osmium Shards
 
 item.gcraft:shardEnder.name=Ender Shards
 
+item.gcraft:itemPlateIron.name=Iron Plate
+item.gcraft:itemPlateCopper.name=Copper Plate
+item.gcraft:itemPlateTin.name=Tin Plate
+
 
 
 tile.gcraft:blockCrystal.name=Crystal Block
